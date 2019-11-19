@@ -7,4 +7,12 @@ public class ActortResult {
         this.packageId = packageId;
         this.result = result;
     }
+
+    public long getPackageId() {
+        return packageId;
+    }
+
+    public String getResult() {
+        return result;
+    }
 }
