@@ -9,14 +9,16 @@ public class ActorTest {
         this.expectedResult = expectedResult;
         this.params = params;
     }
-    /*
-    {"testName":"test1",
-"expectedResult":"2.0",
-"params":[2,1]
-},
-{"testName":"test2",
-"expectedResult":"2.0",
-"params":[4,2]
-}
-     */
+
+    public String getTestName() {
+        return testName;
+    }
+
+    public String getExpectedResult() {
+        return expectedResult;
+    }
+
+    public Object[] getParams() {
+        return params;
+    }
 }
