@@ -45,10 +45,11 @@ public class Main extends AllDirectives {
         ActorRef storeActor = system.actorOf(
                 Props.create(ActorStorage.class)
         );
+        /*
         storeActor.tell(
                 new ActorStorage().StoreMessage("test", "test"),
                 ActorRef.noSender()
-        );
+        );*/
         return null;
     }
 }
