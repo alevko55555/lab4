@@ -3,7 +3,7 @@ package lab4;
 public class ActorTest {
     private final String testName;
     private final String expectedResult;
-    private final String params;
+    private final Ob params;
     /*
     {"testName":"test1",
 "expectedResult":"2.0",
