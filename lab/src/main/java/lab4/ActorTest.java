@@ -2,7 +2,7 @@ package lab4;
 
 public class ActorTest {
     private final String testName;
-    private final 
+    private final String 
     /*
     {"testName":"test1",
 "expectedResult":"2.0",
