@@ -2,11 +2,11 @@ package lab4;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class ActorTest {
+public class Test {
     private final String testName;
     private final String expectedResult;
     private final Object[] params;
-    public ActorTest(@JsonProperty("testName") String testName,
+    public Test(@JsonProperty("testName") String testName,
                      @JsonProperty("expectedResult") String expectedResult,
                      @JsonProperty("params") Object[] params) {
         this.testName = testName;

@@ -6,12 +6,12 @@ public class FunctionFromQuery {
     private final long packageId;
     private final String jsScript;
     private final String functionName;
-    private final ActorTest[] tests;
+    private final Test[] tests;
 
     public FunctionFromQuery(@JsonProperty("packageId") long packageId,
                              @JsonProperty("jsScript") String jsScript,
                              @JsonProperty("functionName") String functionName,
-                             @JsonProperty("tests") ActorTest[] tests){
+                             @JsonProperty("tests") Test[] tests){
         this.packageId = packageId;
         this.jsScript = jsScript;
         this.functionName = functionName;
@@ -30,7 +30,7 @@ public class FunctionFromQuery {
         return functionName;
     }
 
-    public ActorTest[] getTests() {
+    public Test[] getTests() {
         return tests;
     }
 }
