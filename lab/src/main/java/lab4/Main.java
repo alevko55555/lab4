@@ -20,6 +20,8 @@ import java.io.IOException;
 import java.util.concurrent.CompletionStage;
 
 public class Main extends AllDirectives {
+    private static final int SERVER_PORT =  8080;
+
     public static void main(String[] args) throws IOException {
         ActorSystem system = ActorSystem.create("routes");
         final Http http = Http.get(system);
@@ -29,7 +31,7 @@ public class Main extends AllDirectives {
                 instance.createRoute(system).flow(system, materializer);
         final CompletionStage<ServerBinding> binding = http.bindAndHandle(
                 routeFlow,
-                ConnectHttp.toHost("localhost", 8080),
+                ConnectHttp.toHost("localhost", SERVER_PORT),
                 materializer
         );
         System.out.println("Server online at http://localhost:8080/\nPress RETURN to stop...");
