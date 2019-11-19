@@ -43,7 +43,7 @@ public class Main extends AllDirectives {
 
     private Route createRoute(ActorSystem system) {
         ActorRef storeActor = system.actorOf(
-                Props.create(ActorStorage.class)
+                Props.create(ActorRouter.class)
         );
         /*
         storeActor.tell(
