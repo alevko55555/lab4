@@ -2,6 +2,8 @@ package lab4;
 
 public class FunctionFromQuery {
     private final long packageId;
+    private final String jsScript;
+    private final String functionName;
     private final 
 
     /*
