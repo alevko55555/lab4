@@ -1,4 +1,6 @@
 package lab4;
 
-public class ActorPerfomingTest {
+import akka.actor.AbstractActor;
+
+public class ActorPerfomingTest extends AbstractActor {
 }

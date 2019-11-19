@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b1d4b7a0-ce39-4563-ada7-6b62da6e50fe" name="Default Changelist" comment="" />
+    <list default="true" id="b1d4b7a0-ce39-4563-ada7-6b62da6e50fe" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/lab4/ActorPerfomingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab4/ActorPerfomingTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,5 +54,9 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="451" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1574175078745" />
+    <state x="801" y="265" width="374" height="575" key="#com.intellij.ide.util.MemberChooser" timestamp="1574180983027">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="801" y="265" width="374" height="575" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1574180983027" />
   </component>
 </project>
