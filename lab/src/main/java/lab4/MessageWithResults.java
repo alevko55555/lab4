@@ -11,4 +11,20 @@ public class MessageWithResults {
         this.functionName = functionName;
         this.tests = tests;
     }
+
+    public long getPackageId() {
+        return packageId;
+    }
+
+    public String getJsScript() {
+        return jsScript;
+    }
+
+    public String getFunctionName() {
+        return functionName;
+    }
+
+    public Test[] getTests() {
+        return tests;
+    }
 }
