@@ -4,7 +4,7 @@ public class ActorTest {
     private final String testName;
     private final String expectedResult;
     private final Object[] params;
-    public ActorTest {
+    public ActorTest(String testName, String expectedResult, Object[] params) {
         this.testName = testName;
         this.expectedResult = expectedResult;
         this.params = params;
