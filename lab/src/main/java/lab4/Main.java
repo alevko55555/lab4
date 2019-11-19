@@ -4,8 +4,9 @@ package lab4;
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 import akka.actor.Props;
+import akka.http.javadsl.server.AllDirectives;
 
-public class Main {
+public class Main extends AllDirectives {
     ActorSystem system = ActorSystem.create("test");
     ActorRef storeActor = system.actorOf(
             Props.create(StoreActor.class)
