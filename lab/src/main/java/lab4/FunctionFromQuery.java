@@ -18,5 +18,5 @@ public class FunctionFromQuery {
         this.tests = tests;
     }
 
-    
+
 }
