@@ -2,9 +2,9 @@ package lab4;
 
 public class MessageWhithResultOfOneTest {
     private final long packageId;
-    private final String result;
+    private final Result result;
 
-    public MessageWhithResultOfOneTest(long packageId, String result) {
+    public MessageWhithResultOfOneTest(long packageId, Result result) {
         this.packageId = packageId;
         this.result = result;
     }
@@ -13,7 +13,7 @@ public class MessageWhithResultOfOneTest {
         return packageId;
     }
 
-    public String getResult() {
+    public Result getResult() {
         return result;
     }
 }
