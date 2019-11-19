@@ -18,5 +18,19 @@ public class FunctionFromQuery {
         this.tests = tests;
     }
 
+    public long getPackageId() {
+        return packageId;
+    }
 
+    public String getJsScript() {
+        return jsScript;
+    }
+
+    public String getFunctionName() {
+        return functionName;
+    }
+
+    public ActorTest[] getTests() {
+        return tests;
+    }
 }
