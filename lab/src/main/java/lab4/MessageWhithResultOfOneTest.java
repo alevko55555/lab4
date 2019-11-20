@@ -10,7 +10,7 @@ public class MessageWhithResultOfOneTest {
     }
 
     public MessageWhithResultOfOneTest(long packageId, Test test, String result) {
-        this(packageId, new MessageWhithResultOfOneTest(test, result));
+        this(packageId, new Result(test, result));
     }
 
     public long getPackageId() {
