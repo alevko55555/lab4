@@ -8,7 +8,7 @@ public class ActorPerfomingTest extends AbstractActor {
     public Receive createReceive() {
         return receiveBuilder()
                 .match(MessageWithTest.class, msg -> getSender()
-                        .tell(new MessageWithTest(msg.getPackageId(),msg.getTest(), msg.getTest())), ActorRef.noSender())
+                        .tell(new MessageWithTest(msg.getPackageId(),msg.getTest(), executionTest(msg))), ActorRef.noSender())
                 .build();
     }
 }
