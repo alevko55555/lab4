@@ -24,7 +24,7 @@ public class MessageWithTest {
         return functionName;
     }
 
-    public Test getTests() {
+    public Test getTest() {
         return test;
     }
 }
