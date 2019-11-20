@@ -13,4 +13,9 @@ public class ActorRouter extends AbstractActor {
         this.storageActor = getContext().actorOf(Props.create(ActorStorage.class));
         this.router = getContext().actorOf(new RoundRobinPool(5).props(Props.create(ActorPerfomingTest.class)));
     }
+
+    @Override
+    public Receive createReceive() {
+        return null;
+    }
 }
