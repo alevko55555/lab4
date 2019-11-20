@@ -15,12 +15,12 @@ public class ActorPerfomingTest extends AbstractActor {
                         .tell(new MessageWithTest(msg.getPackageId(),msg.getTest(), executTest(msg))), ActorRef.noSender())
                 .build();
     }
-}
 
-private String executTest (MessageWithTest msg) {
-    ScriptEngine engine = new
-            ScriptEngineManager().getEngineByName("nashorn");
-    engine.eval(msg.getJsScript());
-    Invocable invocable = (Invocable) engine;
-    return invocable.invokeFunction(msg.getFunctionName(), msg.getTest().getParams()).toString();
+    private String executTest (MessageWithTest msg) {
+        ScriptEngine engine = new
+                ScriptEngineManager().getEngineByName("nashorn");
+        engine.eval(msg.getJsScript());
+        Invocable invocable = (Invocable) engine;
+        return invocable.invokeFunction(msg.getFunctionName(), msg.getTest().getParams()).toString();
+    }
 }
