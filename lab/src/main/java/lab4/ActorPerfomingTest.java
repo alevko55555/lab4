@@ -12,7 +12,7 @@ public class ActorPerfomingTest extends AbstractActor {
     @Override
     public Receive createReceive() {
         return receiveBuilder()
-                .match(MessageWithTest.class, msg -> MessageWithTest(msg.getPackageId(), msg.getTest(), executTest(msg)))
+                .match(MessageWhithResultOfOneTest.class, msg -> MessageWithTest(msg.getPackageId(), msg.getTest(), executTest(msg)))
                 .build();
     }
 
