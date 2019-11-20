@@ -28,7 +28,7 @@ public class ActorPerfomingTest extends AbstractActor {
             return "ScriptException" + except.getLocalizedMessage();
         }
         catch (NoSuchMethodException except) {
-            return "NoSuchMethodException";
+            return "NoSuchMethodException" + except.getLocalizedMessage();
         }
     }
 }
