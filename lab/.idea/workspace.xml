@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b1d4b7a0-ce39-4563-ada7-6b62da6e50fe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/lab4/ActorRouter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab4/ActorRouter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab4/MessageWithResults.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab4/MessageWithTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
