@@ -21,7 +21,7 @@ public class ActorRouter extends AbstractActor {
                 .match(FunctionFromQuery.class, msg -> {
                     int len = msg.getTests().length;
                     for (int i = 0; i < len; i++){
-                        router.tell(new MessageWithResults(i, msg), storageActor);
+                        router.tell(new MessageWithResults(msg.getPackageId(), msg.getJsScript(), msg.getFunctionName(), ), storageActor);
                     }
                 })
                 .build();
