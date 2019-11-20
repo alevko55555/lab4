@@ -20,6 +20,7 @@ public class ActorPerfomingTest extends AbstractActor {
         try {
             ScriptEngine engine = new
                     ScriptEngineManager().getEngineByName("nashorn");
+            engine.eval(msg.);
             engine.eval(msg.getJsScript());
             Invocable invocable = (Invocable) engine;
             return invocable.invokeFunction(msg.getFunctionName(), msg.getTest().getParams()).toString();
