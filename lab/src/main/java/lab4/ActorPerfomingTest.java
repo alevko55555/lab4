@@ -16,7 +16,7 @@ public class ActorPerfomingTest extends AbstractActor {
                 .build();
     }
 
-    private  String executTest (MessageWhithResultOfOneTest msg) {
+    private  String executTest (RequestMessageOfPackageTestResult msg) {
         try {
             ScriptEngine engine = new
                     ScriptEngineManager().getEngineByName("nashorn");
