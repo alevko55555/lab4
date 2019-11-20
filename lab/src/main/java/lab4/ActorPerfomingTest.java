@@ -12,3 +12,7 @@ public class ActorPerfomingTest extends AbstractActor {
                 .build();
     }
 }
+
+private executionTest (MessageWithTest msg) {
+    
+}
