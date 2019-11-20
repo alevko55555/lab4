@@ -9,6 +9,10 @@ public class MessageWhithResultOfOneTest {
         this.result = result;
     }
 
+    public MessageWhithResultOfOneTest(long packageId, Test test, String result) {
+        this(packageId, new MessageWhithResultOfOneTest(test, result));
+    }
+
     public long getPackageId() {
         return packageId;
     }
