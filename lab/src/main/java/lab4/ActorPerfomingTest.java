@@ -16,7 +16,7 @@ public class ActorPerfomingTest extends AbstractActor {
                 .build();
     }
 
-    private void receiveMsg (MessageWithTest msg) throw ScriptException{
+    private void receiveMsg (MessageWithTest msg) throws ScriptException, NoSuchMethodException{
         getSender().tell(new MessageWhithResultOfOneTest(msg.getPackageId(), msg.getTest(), executTest(msg)),
                 ActorRef.noSender());
     }
