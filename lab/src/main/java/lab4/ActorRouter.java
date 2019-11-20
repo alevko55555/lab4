@@ -18,6 +18,11 @@ public class ActorRouter extends AbstractActor {
     public Receive createReceive() {
         return receiveBuilder()
                 .match(RequestMessageOfPackageTestResult.class, msg -> storageActor.tell(msg, sender()))
-                .match(FunctionFromQuery.class, msg -> );
+                .match(FunctionFromQuery.class, msg -> {
+                    int len = msg.getTests().length;
+                    for (int i = 0; i < len; i++){
+                        router.tell();
+                    }
+                });
     }
 }
