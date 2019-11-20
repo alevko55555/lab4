@@ -23,6 +23,7 @@ public class ActorRouter extends AbstractActor {
                     for (int i = 0; i < len; i++){
                         router.tell(new MessageWithResults(i, msg), storageActor);
                     }
-                });
+                })
+                .build();
     }
 }
