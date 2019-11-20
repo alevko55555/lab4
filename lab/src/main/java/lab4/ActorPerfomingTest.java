@@ -5,6 +5,8 @@ import akka.actor.AbstractActor;
 public class ActorPerfomingTest extends AbstractActor {
     @Override
     public Receive createReceive() {
-        return null;
+        return receiveBuilder()
+                .match(MessageWithTest.class, msg -> )
+                .build();
     }
 }
