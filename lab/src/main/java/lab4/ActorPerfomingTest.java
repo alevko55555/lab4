@@ -6,6 +6,7 @@ import akka.actor.ActorRef;
 import javax.script.Invocable;
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
+import javax.script.ScriptException;
 
 public class ActorPerfomingTest extends AbstractActor {
     @Override
@@ -16,10 +17,15 @@ public class ActorPerfomingTest extends AbstractActor {
     }
 
     private Test executTest (MessageWithTest msg) {
-        ScriptEngine engine = new
-                ScriptEngineManager().getEngineByName("nashorn");
-        engine.eval(msg.getJsScript());
-        Invocable invocable = (Invocable) engine;
-        return invocable.invokeFunction(msg.getFunctionName(), msg.getTest().getParams()).toString();
+        try {
+            ScriptEngine engine = new
+                    ScriptEngineManager().getEngineByName("nashorn");
+            engine.eval(msg.getJsScript());
+            Invocable invocable = (Invocable) engine;
+            return invocable.invokeFunction(msg.getFunctionName(), msg.getTest().getParams()).toString();
+        }
+        catch (ScriptException except){
+            return ;
+        }
     }
 }
