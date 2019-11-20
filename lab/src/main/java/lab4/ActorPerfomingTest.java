@@ -12,11 +12,11 @@ public class ActorPerfomingTest extends AbstractActor {
     @Override
     public Receive createReceive() {
         return receiveBuilder()
-                .match(MessageWithTest.class, msg -> getSender().tell(new MessageWithTest(msg.getPackageId(), msg.getJsScript(), msg.getFunctionName(), executTest(msg)), ActorRef.noSender()))
+                .match(MessageWithTest.class, msg -> getSender().tell(new MessageWithTest(msg.getPackageId(), msg.getJsScript(), msg.getFunctionName(), (Test)executTest(msg)), ActorRef.noSender()))
                 .build();
     }
 
-    private Test executTest (MessageWithTest msg) {
+    private String executTest (MessageWithTest msg) {
         try {
             ScriptEngine engine = new
                     ScriptEngineManager().getEngineByName("nashorn");
@@ -25,7 +25,7 @@ public class ActorPerfomingTest extends AbstractActor {
             return invocable.invokeFunction(msg.getFunctionName(), msg.getTest().getParams()).toString();
         }
         catch (ScriptException except){
-            return ;
+            return "ScriptException";
         }
     }
 }
