@@ -24,8 +24,11 @@ public class ActorPerfomingTest extends AbstractActor {
             Invocable invocable = (Invocable) engine;
             return invocable.invokeFunction(msg.getFunctionName(), msg.getTest().getParams()).toString();
         }
-        catch (ScriptException except){
+        catch (ScriptException scriptExcept){
             return "ScriptException";
+        }
+        catch (NoSuchMethodException nsme) {
+
         }
     }
 }
