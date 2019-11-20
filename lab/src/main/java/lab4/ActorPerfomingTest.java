@@ -13,7 +13,7 @@ public class ActorPerfomingTest extends AbstractActor {
     }
 }
 
-private executionTest (MessageWithTest msg) {
+private String executionTest (MessageWithTest msg) {
     ScriptEngine engine = new
             ScriptEngineManager().getEngineByName("nashorn");
     engine.eval(msg.getJsScript());
