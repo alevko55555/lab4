@@ -3,6 +3,10 @@ package lab4;
 import akka.actor.AbstractActor;
 import akka.actor.ActorRef;
 
+import javax.script.Invocable;
+import javax.script.ScriptEngine;
+import javax.script.ScriptEngineManager;
+
 public class ActorPerfomingTest extends AbstractActor {
     @Override
     public Receive createReceive() {
