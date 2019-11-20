@@ -4,12 +4,12 @@ public class MessageWithTest {
     private final long packageId;
     private final String jsScript;
     private final String functionName;
-    private final Test[] tests;
-    public MessageWithTest(long packageId, String jsScript, String functionName, Test[] tests){
+    private final Test test;
+    public MessageWithTest(long packageId, String jsScript, String functionName, Test test){
         this.packageId = packageId;
         this.jsScript = jsScript;
         this.functionName = functionName;
-        this.tests = tests;
+        this.test = test;
     }
 
     public long getPackageId() {
@@ -24,7 +24,7 @@ public class MessageWithTest {
         return functionName;
     }
 
-    public Test[] getTests() {
-        return tests;
+    public Test getTests() {
+        return test;
     }
 }
