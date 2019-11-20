@@ -1,15 +1,15 @@
 package lab4;
 
 public class Result {
-    private final long packageId;
+    private final Test test;
     private final String result;
-    public Result(long packageId, String result){
-        this.packageId = packageId;
+    public Result(Test test, String result){
+        this.test = test;
         this.result = result;
     }
 
-    public long getPackageId() {
-        return packageId;
+    public Test getTest() {
+        return test;
     }
 
     public String getResult() {
