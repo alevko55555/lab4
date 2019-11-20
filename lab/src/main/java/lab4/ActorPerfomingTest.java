@@ -14,5 +14,9 @@ public class ActorPerfomingTest extends AbstractActor {
 }
 
 private executionTest (MessageWithTest msg) {
-    
+    ScriptEngine engine = new
+            ScriptEngineManager().getEngineByName("nashorn");
+    engine.eval(jscript);
+    Invocable invocable = (Invocable) engine;
+    return invocable.invokeFunction(functionName, params).toString();
 }
