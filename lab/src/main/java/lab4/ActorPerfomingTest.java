@@ -11,11 +11,11 @@ public class ActorPerfomingTest extends AbstractActor {
     @Override
     public Receive createReceive() {
         return receiveBuilder()
-                .match(MessageWithTest.class, msg -> getSender().tell(MessageWithTest.class, msg.getPackageId(), msg.getJsScript(), msg.getFunctionName(), executTest(msg)))
+                .match(MessageWithTest.class, msg -> getSender().tell(new MessageWithTest(msg.getPackageId(), msg.getJsScript(), msg.getFunctionName(), executTest(msg)), ))
                 .build();
     }
 
-    private String executTest (MessageWithTest msg) {
+    private Test executTest (MessageWithTest msg) {
         ScriptEngine engine = new
                 ScriptEngineManager().getEngineByName("nashorn");
         engine.eval(msg.getJsScript());
