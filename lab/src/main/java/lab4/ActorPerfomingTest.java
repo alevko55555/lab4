@@ -11,8 +11,7 @@ public class ActorPerfomingTest extends AbstractActor {
     @Override
     public Receive createReceive() {
         return receiveBuilder()
-                .match(MessageWithTest.class, msg -> getSender()
-                        .tell(new MessageWithTest(msg.getPackageId(),msg.getTest(), executTest(msg))), ActorRef.noSender())
+                .match(MessageWithTest.class, msg -> g)
                 .build();
     }
 
