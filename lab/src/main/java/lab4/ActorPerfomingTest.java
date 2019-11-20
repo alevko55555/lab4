@@ -16,7 +16,7 @@ public class ActorPerfomingTest extends AbstractActor {
                 .build();
     }
 
-    
+    private MessageWhithResultOfOneTest 
 
     private  String executTest (MessageWithTest msg) {
         try {
