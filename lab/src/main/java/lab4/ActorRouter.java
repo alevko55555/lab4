@@ -9,6 +9,6 @@ public class ActorRouter extends AbstractActor {
     public ActorRef router;
 
     public ActorRouter (ActorRef router) {
-        this.router = getContext()
+        this.router = getContext().actorOf(Props.create(ActorRouter.class));
     }
 }
