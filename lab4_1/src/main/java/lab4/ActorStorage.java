@@ -1,6 +1,7 @@
 package lab4;
 
 import akka.actor.AbstractActor;
+import akka.actor.ActorRef;
 import akka.dispatch.japi;
 import scala.collection.immutable.List;
 
@@ -15,6 +16,11 @@ public class ActorStorage extends AbstractActor {
     public Receive createReceive() {
         return receiveBuilder()
                 .create()
-                .match(RequestMessageOfPackageTestResult.class);
+                .match(RequestMessageOfPackageTestResult.class,
+                        requre -> getSender().tell(
+                                storage.get(requre.getPackageId()),
+                                ActorRef.noSender()
+                        ))
+                .match();
     }
 }
