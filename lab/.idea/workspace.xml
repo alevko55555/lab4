@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b1d4b7a0-ce39-4563-ada7-6b62da6e50fe" name="Default Changelist" comment="" />
+    <list default="true" id="b1d4b7a0-ce39-4563-ada7-6b62da6e50fe" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../lab4_1/src/main/java/lab4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab4_1/src/main/java/lab4/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,9 +36,9 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
   <component name="ServiceViewManager">
@@ -93,9 +95,9 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="805" y="265" width="366" height="574" key="RollbackChangesDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1574324145332" />
-    <state x="482" y="187" key="SettingsEditor" timestamp="1574324161659">
+    <state x="482" y="187" width="1024" height="845" key="SettingsEditor" timestamp="1574325829557">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="482" y="187" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1574324161659" />
+    <state x="482" y="187" width="1024" height="845" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1574325829557" />
   </component>
 </project>

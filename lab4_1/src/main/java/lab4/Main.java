@@ -5,6 +5,8 @@ import akka.actor.ActorSystem;
 import akka.http.javadsl.server.AllDirectives;
 import akka.stream.ActorMaterializer;
 
+import java.io.IOException;
+
 public class Main extends AllDirectives {
     private static final int SERVER_PORT =  8080;
 
