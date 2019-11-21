@@ -16,12 +16,12 @@ public class ActorStorage extends AbstractActor {
     public Receive createReceive() {
         return receiveBuilder()
                 .create()
-                .match(MessageWithResultOfOneTest.class,
-                        requre -> getSender().tell(
-                                storage.get(requre.getPackageId()).toList(),
+                .match(RequestMessageOfPackageTestResult.class,
+                        require -> getSender().tell(
+                                storage.get(require.getPackageId()).toList(),
                                 ActorRef.noSender()
                         ))
-                .match(RequestMessageOfPackageTestResult.class,
+                .match(MessageWithTest.class,
                         msg -> getSender().tell(
                                 new TestResults(msg.getPackageId(), storage.get(msg.getPackageId())),
                                 ActorRef.noSender()
