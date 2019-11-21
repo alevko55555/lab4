@@ -10,13 +10,29 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ActorStorage extends AbstractActor {
-    private HashMap<Long, ArrayList<MessageWithTest>> storage = new HashMap<>();
+    private HashMap<Long, ArrayList<Result>> storage = new HashMap<>();
 
     @Override
     public Receive createReceive() {
         return receiveBuilder()
                 .create()
-                .match()
-                .match();
+                .match(MessageWithResultOfOneTest.class,
+                        msg -> {
+                    if (storage.containsKey(msg.getPackageId())) {
+                        ArrayList<Result> tests = storage.get(msg.getPackageId());
+                        tests.add(msg.getResult());
+                        storage.put(msg.getPackageId(), tests);
+                    } else {
+                        ArrayList<Result> tests = new ArrayList<>();
+                        tests.add(msg.getResult());
+                        storage.put(msg.getPackageId(), tests);
+                    }
+                        })
+                .match(RequestMessageOfPackageTestResult.class,
+                        msg -> getSender().tell(
+                                new TestResults(msg.getPackageId(), storage.get(msg.getPackageId())),
+                                ActorRef.noSender()
+                        ))
+                .build();
     }
 }
