@@ -15,6 +15,6 @@ public class ActorStorage extends AbstractActor {
     public Receive createReceive() {
         return receiveBuilder()
                 .create()
-                .match();
+                .match(RequestMessageOfPackageTestResult.class);
     }
 }
