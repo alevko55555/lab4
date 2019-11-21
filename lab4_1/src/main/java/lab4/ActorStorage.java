@@ -3,10 +3,12 @@ package lab4;
 import akka.actor.AbstractActor;
 import scala.collection.immutable.List;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Map;
 
 public class ActorStorage extends AbstractActor {
-    private final Map<Long, List<Result>> storage;
+    private HashMap<Long, ArrayList>
 
     @Override
     public Receive createReceive() {
