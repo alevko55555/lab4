@@ -1,9 +1,10 @@
 package lab4;
 
 import akka.actor.AbstractActor;
+import scala.collection.immutable.List;
 
 public class ActorStorage extends AbstractActor {
-    private Map
+    private final Map<long, List<Result>> storage;
 
     @Override
     public Receive createReceive() {
