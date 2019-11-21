@@ -29,7 +29,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.customizations" />
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -77,9 +77,9 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="571" y="210" width="824" height="684" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1574322861782" />
-    <state x="482" y="187" key="SettingsEditor" timestamp="1574322395408">
+    <state x="482" y="187" key="SettingsEditor" timestamp="1574323009162">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="482" y="187" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1574322395408" />
+    <state x="482" y="187" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1574323009162" />
   </component>
 </project>
